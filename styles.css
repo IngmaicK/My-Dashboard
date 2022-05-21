@@ -64,12 +64,12 @@ ul {
     text-shadow: #080808;
   }
 
-.container-fluid {
+/* .container-fluid {
   background-image: url('./assets/cervezasdemexico.jpg');
   color: white;
   text-align: center;
   height: 200px;
-}
+} */
 
 .col-md-4:hover {
   transform: scale(1.2);

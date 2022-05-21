@@ -45,8 +45,20 @@ const setGraph = (data) => {
 
 
 }
+getWeather()
 
-// Aqui inician los intentos por generar las otras graficas
+
+//Here begins 2nd chart
+const getWeather2 = async () => {
+    const url = 'https://api.waqi.info/feed/mexico/?token=bfa4362bd4d05d8afb40b09afe745c48b2b8b583'
+    const res = await fetch(url)
+
+    console.log(res)
+    const data = await res.json()
+
+    console.log(data)
+    setGraph2(data.data)
+}
 
 const setGraph2 = (data) => {
     const labels = Object.keys(data.iaqi)
@@ -65,7 +77,7 @@ const setGraph2 = (data) => {
 
 
     const config = {
-        type: 'bar',
+        type: 'line',
         data: dataConfig,
         options: {
             scales: {
@@ -76,21 +88,12 @@ const setGraph2 = (data) => {
         }
     };
     
-    const myChart2 = new Chart(
+    const myChart = new Chart(
         document.getElementById('myChart2'),
         config
 
     )
 
 
-
-
 }
-
-
-
-
-
-
-getWeather()
-
+getWeather2()
