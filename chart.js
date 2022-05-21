@@ -1,5 +1,5 @@
 const getWeather = async () => {
-    const url = 'https://api.waqi.info/feed/mexico/?token=bfa4362bd4d05d8afb40b09afe745c48b2b8b583'
+    const url = 'https://api.waqi.info/feed/mexicali/?token=bfa4362bd4d05d8afb40b09afe745c48b2b8b583'
     const res = await fetch(url)
 
     console.log(res)
