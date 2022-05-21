@@ -50,7 +50,7 @@ getWeather()
 
 //Here begins 2nd chart
 const getWeather2 = async () => {
-    const url = 'https://api.waqi.info/feed/mexico/?token=bfa4362bd4d05d8afb40b09afe745c48b2b8b583'
+    const url = 'https://api.waqi.info/feed/londres/?token=bfa4362bd4d05d8afb40b09afe745c48b2b8b583'
     const res = await fetch(url)
 
     console.log(res)
