@@ -26,7 +26,7 @@ const setGraph = (data) => {
 
 
     const config = {
-        type: 'bar',
+        type: 'line',
         data: dataConfig,
         options: {
             scales: {
@@ -77,7 +77,7 @@ const setGraph2 = (data) => {
 
 
     const config = {
-        type: 'line',
+        type: 'radar',
         data: dataConfig,
         options: {
             scales: {
